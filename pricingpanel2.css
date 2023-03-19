@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers  #1d3557*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #bde0fe;
+    display: flex;
+    flex-direction: column;
+    margin:43px 45px;
+    margin-bottom: 5px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header {
+    font-weight: 600;
+    font-size: 18px;
+    color: #bde0fe;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 37px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+    margin-top: 15px;
+}
+.panel{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: all 300ms ease;
+}
+.panel img{
+    margin-bottom: 12%;
+    width:48%;
+    height:35%;
+    margin-top: 5%;
+}
+.classic{
+    background-color: white;
+    border-radius: 17px;
+    padding:5px;
+    text-align: center;
+    margin-right:4px;
+    margin-bottom: 5px;
+    height:33rem;
+    width:90%;
+
+}
+.ultra{
+    background-color: white;
+    border-radius: 17px;
+    padding:5px;
+    text-align: center;
+    margin-right:4px;
+    margin-bottom: 5px;
+    height:33rem;
+    width:90%;
+    
+}
+.superb{
+    background-color: white;
+    border-radius: 17px;
+    padding:5px;
+    text-align: center;
+    margin-right:4px;
+    margin-bottom: 5px;
+    height:33rem;
+    width:90%;
+    
+}
+
+#panelprice:hover{
+    background-color: #1d3557;
+    color: white;
+    transform:translateY(-10px);
+
+}
+#panelprice:hover  .price{
+    background-color: white;
+    color: #1d3557;
+    cursor: pointer;
+}
+
+h2{
+    font-size:200%;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 5%;
+}
+.features{
+    font-size:90%;
+    line-height:1.25;
+    margin-bottom:8%;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.price{
+    background-color:#1d3557 ;
+    color: white;
+    border-radius: 30px;
+    padding:9px 20px;
+    margin-top:8%;
+    margin-bottom:10%;
+    letter-spacing: 2px;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 15px 10px 0 15px;
+    padding:10px;
+}
+.contact{
+    margin:10px 20px;
+    margin-bottom: 5px;
+}
+footer span{
+    font-size: 17px;
+    font-weight: 550;
+}
+a{
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+    color:#1d3557;
+}
+a:hover{
+    color: #1d3557;
+    text-decoration: underline black;
+    cursor:pointer;
+    transform: translateY(-5px);
+}
+
+@media(min-width:850px){
+    .panel{
+        flex-direction:row;
+    }
+    .classic{
+        height: 350px;
+        width:27%;
+    }
+    .superb{
+        height: 350px;
+        width:27%;
+    }
+    .ultra{
+        height: 350px;
+        width:27%;
+    }
+    header span{
+        color: black;
+        
+    }
+    .price{
+        margin-top:8px;
+        margin-bottom:15px;
+    }
+    h1{
+        margin-bottom: 3%;
+    }
+    h2{
+        font-size:  125%;
+    
+    }
+    .features{
+        font-size:75%;
+        line-height:1.75;
+        margin-bottom:8%;
+        font-weight: 700;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: center;
+        margin: 15px 15px 0 53px;
+    }
+}
